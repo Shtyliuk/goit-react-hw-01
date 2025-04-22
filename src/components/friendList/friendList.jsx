@@ -1,6 +1,6 @@
 import css from './friendList.module.css';
 
-import FriendListItem from "./FriendListItem";
+import FriendListItem from "./friendListItem";
 
 function FriendList({ friends }) {
   return (

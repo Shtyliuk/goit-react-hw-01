@@ -1,0 +1,50 @@
+body.dark {
+  background: linear-gradient(135deg, #1e1e2f, #2a2a4a);
+  color: #ffffff;
+}
+
+body.light {
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  color: #1f2937;
+}
+
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.app > * + * {
+  margin-top: 40px;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  color: inherit;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.05);
+}
+
+.light .theme-toggle {
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.light .theme-toggle:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
